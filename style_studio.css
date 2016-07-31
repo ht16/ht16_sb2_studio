@@ -207,7 +207,7 @@ table.position {
 }
 
 div.Header {
-	height: 140px;
+	height: 220px;
 	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
@@ -220,7 +220,7 @@ div.Header {
 	display: block;
 	left: 10px;
 	position: absolute;
-	top: 3px;
+	top: 10px;
 	width: 850px;
 }
 
