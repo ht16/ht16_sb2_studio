@@ -1,0 +1,20 @@
+; $Id: $
+name = HT16 SB2 Studio
+description = Tableless, multi-column, fixed width theme
+screenshot = screenshot.png
+core = 6.x
+version = 6.x-1.0-beta2
+engine = phptemplate
+regions[topright] = Right Header
+regions[left] = Left sidebar
+regions[content] = Content
+regions[right] = Right sidebar
+regions[navigation] = Menu
+regions[copyright] = Copyright
+stylesheets[all][] = style.css
+scripts[] = script.js
+features[] = logo
+features[] = slogan
+features[] = mission
+features[] = comment_user_picture
+features[] = favicon
