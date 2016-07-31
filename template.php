@@ -12,7 +12,7 @@ function get_full_path_to_theme() {
  *
  * @ingroup themeable
  */
-function wilderness_menu_local_task($link, $active = FALSE) {
+function ht16_sb2_studio_menu_local_task($link, $active = FALSE) {
   $output = preg_replace('~<a href="([^"]*)"[^>]*>([^<]*)</a>~',
   '<a href="$1" class="Button">'
   .'<span class="btn">'
@@ -29,7 +29,7 @@ function wilderness_menu_local_task($link, $active = FALSE) {
  *
  * @ingroup themeable
  */
-function wilderness_menu_local_tasks() {
+function ht16_sb2_studio_menu_local_tasks() {
   $output = '';
 
   if ($primary = menu_primary_local_tasks()) {
@@ -46,7 +46,7 @@ function wilderness_menu_local_tasks() {
  *
  * @ingroup themeable
  */
-function wilderness_button($element) {
+function ht16_sb2_studio_button($element) {
   // Make sure not to overwrite classes.
   if (isset($element['#attributes']['class'])) {
     $element['#attributes']['class'] = 'Button form-' . $element['#button_type'] . ' ' . $element['#attributes']['class'];
@@ -73,7 +73,7 @@ function wilderness_button($element) {
  * Image assist module support.
  * Using Artisteer styles in IE
 */
-function wilderness_img_assist_page($content, $attributes = NULL) {
+function ht16_sb2_studio_img_assist_page($content, $attributes = NULL) {
   $title = drupal_get_title();
   $output = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">'."\n";
   $output .= '<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">'."\n";
@@ -96,7 +96,7 @@ function wilderness_img_assist_page($content, $attributes = NULL) {
   // However, on my site I turned off the text link since I use TinyMCE. I think
   // it would confuse users to have an Add Images link AND a button on the
   // TinyMCE toolbar.
-  // 
+  //
   // Note that in both cases the img_assist.css file is loaded last. This
   // provides a way to make style changes to img_assist independently of how it
   // was loaded.
